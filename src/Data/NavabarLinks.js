@@ -1,7 +1,7 @@
 export const navLinks = [
     {
         name:"Home",
-        redirectUrl:""
+        redirectUrl:" "
     },
     {
         name:"About",
