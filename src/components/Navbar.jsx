@@ -13,14 +13,14 @@ if(window.scrollY>140){
 }
     }
     return (
-        <div className={scroll?'flex justify-evenly py-12 sticky top-0 bg-white z-10 w-screen':'flex justify-evenly sticky top- py-6 w-screen bg-[red] z-10'}>
+        <div className={scroll?'flex justify-center gap-12 py-6 sticky top-0 bg-white/90 z-40  w-screen':'flex justify-center gap-12 sticky top-0 py-12 w-screen bg-white z-10'}>
             {navLinks.map((navLink, index) => {
                 if (index == 2) {
                     return (
                         <>
-                            <div className='flex '>
+                            <div className='flex gap-8 '>
                                 <p onClick={()=>setIsActive(navLink.name)} className={isActive === navLink.name?"text-[#c16839] text-xl hover:cursor-pointer":"text-xl hover:cursor-pointer"}>{navLink.name}</p>
-                                <img src={logo} className='h-8 ml-28' />
+                                <img src={logo} className='h-8 ' />
                             </div>
                         </>
                     )
