@@ -11,7 +11,7 @@ const Testimonials = () => {
       setPosition(position - 1)
     }
     else {
-      setPosition(0);
+      setPosition(0); 
     }
   }
   const handleAdvance = () => {
