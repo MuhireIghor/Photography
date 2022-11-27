@@ -6,6 +6,7 @@ import {ImCross} from 'react-icons/im';
 import { useRecoilState } from 'recoil';
 import { showModal } from '../atoms'
 import Services from '../components/Services';
+import OurWorks from '../components/OurWorks';
 
 const Home = () => {
 const [modal,setModal] = useRecoilState(showModal);
@@ -18,6 +19,7 @@ const [modal,setModal] = useRecoilState(showModal);
           <MainPage />
           <About modal={modal} />
           <Services />
+          <OurWorks />
           </>
         ):(
           <div className='bg-white  h-screen w-screen flex items-center justify-center'>
