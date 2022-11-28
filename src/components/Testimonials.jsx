@@ -3,7 +3,7 @@ import bgImg from '../../src/assets/mainPage.png';
 import { testimonials } from '../Data/testimonials';
 import { FaChevronLeft } from 'react-icons/fa';
 import { FaChevronRight } from 'react-icons/fa';
-import {ImQuotesLeft} from 'react-icons/im';
+import { ImQuotesLeft } from 'react-icons/im';
 import { Fade, Slide } from 'react-reveal';
 const Testimonials = () => {
   const [position, setPosition] = useState(0);
@@ -43,18 +43,21 @@ const Testimonials = () => {
         <div className='flex flex-col absolute left-16 top-[328px] bg-white p-10  w-1/3'>
 
           <div className='gap-12 flex flex-col p-auto '>
-            { 
-              change ? ( 
+            {
+              change ? (
                 <>
                   <Fade left spy={testimonials[position].name}>
                     <p className='text-[#6b6b6b] text-md font-light font-serif'>{testimonials[position].message}</p>
-                    <div className='flex  justify-between'>
-                      <div className='flex flex-col  items-center justify-center basis-3/4 gap-2'>
-                        <p className='text-md font-semibold text-[#6b6b6b]'>{testimonials[position].date}</p>
-                        <div className='flex gap-2'>
-                          <ImQuotesLeft className='text-4xl -ml-4 -mt-4 text-[#d7aa92]'  />
-                        <p className='text-2xl font-extrabold text-[#6b6b6b] -ml-1' >{testimonials[position].name}</p>
+                    <div className='flex justify-between'>
+                      <div className='flex gap-4 '>
+                        <ImQuotesLeft className='text-4xl text-[#d7aa92] ' />
+                        <div className='flex flex-col items-start justify-center basis-3/4 gap-2 '>
+                          <p className='text-md font-semibold text-[#6b6b6b]'>{testimonials[position].date}</p>
+                          <div className='flex gap-2'>
+                            <p className='text-2xl font-extrabold text-[#6b6b6b]  '>{testimonials[position].name}</p>
+                          </div>
                         </div>
+
                       </div>
                       <div className='flex gap-12 basis-1/4'>
                         <FaChevronLeft onClick={handleReverse} className={backward ? "text-black" : "text-[gray]"} />
@@ -68,16 +71,19 @@ const Testimonials = () => {
                   <Fade right spy={testimonials[position].name}>
                     <p className='text-[#6b6b6b] text-md font-light font-serif'>{testimonials[position].message}</p>
                     <div className='flex justify-between'>
-                      <div className='flex flex-col items-center justify-center basis-3/4 gap-2 '>
-                        <p className='text-md font-semibold text-[#6b6b6b]'>{testimonials[position].date}</p>
-                        <div className='flex gap-2'>
-                <ImQuotesLeft className='text-4xl -ml-4 -mt-4 text-[#d7aa92]' />
-                        <p className='text-2xl font-extrabold text-[#6b6b6b] -ml-1 '>{testimonials[position].name}</p>
+                      <div className='flex gap-4 '>
+                        <ImQuotesLeft className='text-4xl text-[#d7aa92] ' />
+                        <div className='flex flex-col items-start justify-center basis-3/4 gap-2 '>
+                          <p className='text-md font-semibold text-[#6b6b6b]'>{testimonials[position].date}</p>
+                          <div className='flex gap-2'>
+                            <p className='text-2xl font-extrabold text-[#6b6b6b] '>{testimonials[position].name}</p>
+                          </div>
                         </div>
+
                       </div>
                       <div className='flex gap-12 basis-1/4'>
-                        <FaChevronLeft onClick={handleReverse} />
-                        <FaChevronRight onClick={handleAdvance} />
+                        <FaChevronLeft onClick={handleReverse} className={backward ? "text-black" : "text-[gray]"} />
+                        <FaChevronRight onClick={handleAdvance} className={forward ? "text-black" : "text-[gray]"} />
                       </div>
                     </div>
                   </Fade>
