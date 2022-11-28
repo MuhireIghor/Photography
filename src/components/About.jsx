@@ -26,7 +26,7 @@ const About = () => {
       <div className='flex flex-col items-center justify-center p-28'>
         <div className='flex flex-col relative' >
           <img src={wedVid} className='z-10' />
-          <div className='bg-white/20 backdrop-saturate-150 w-full h-full z-20 absolute flex justify-center items-center'>
+          <div className='brightness-50 w-full h-full z-20 absolute flex justify-center items-center'>
             <div className='w-44 h-44 rounded-full border-2 border-white flex justify-center items-center'>
               <button onClick={() =>setCard(true)}>
                 <GoSearch className='text-white text-6xl font-medium' />

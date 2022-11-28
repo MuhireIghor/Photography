@@ -19,14 +19,14 @@ if(window.scrollY>140){
                     return (
                         <>
                             <div className='flex gap-8 '>
-                                <p onClick={()=>setIsActive(navLink.name)} className={isActive === navLink.name?"text-[#c16839] text-xl hover:cursor-pointer":"text-xl hover:cursor-pointer"}>{navLink.name}</p>
+                                <p onClick={()=>setIsActive(navLink.name)} className={isActive === navLink.name?"text-[#c16839] text-xl hover:cursor-pointer":"text-xl hover:cursor-pointer hover:text-[#c16839]"}>{navLink.name}</p>
                              <p className='text-xl text-[#6b6b6b] font-bold '>NEW HEAVEN &nbsp;PROTOCOL</p>
                             </div>
                         </>
                     )
                 }
                 return (
-                    <p className={isActive === navLink.name?"text-[#c16839] text-xl hover:cursor-pointer":"text-xl hover:cursor-pointer"} onClick={()=>setIsActive(navLink.name)} key={index}>{navLink.name}</p>
+                    <p className={isActive === navLink.name?"text-[#c16839] text-xl hover:cursor-pointer":"text-xl hover:cursor-pointer hover:text-[#c16839]"} onClick={()=>setIsActive(navLink.name)} key={index}>{navLink.name}</p>
                 )
             })}
         </div>

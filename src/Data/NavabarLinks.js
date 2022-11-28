@@ -20,7 +20,7 @@ export const navLinks = [
         redirectUrl:"Blog"
     },
     {
-        name:"Contacy",
+        name:"Contacts",
         redirectUrl:"Contact"
     },
 ]

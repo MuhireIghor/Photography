@@ -8,7 +8,7 @@ const MainPage = () => {
             <div className='main1 h-[41rem] flex flex-col items-center justify-center'>
                 <div className=' w-full h-full flex flex-col items-center justify-center opacity-90 relative'>
                     <img src={leaf} className='z-10' />
-                    <div className='flex  w-full h-full backdrop-saturate-125 z-30 bg-white/20 absolute'>
+                    <div className='flex  w-full h-full z-30 brightness-50 absolute'>
                         <div className='w-full h-full flex flex-col items-center justify-center gap-4'>
                             <div className='flex gap-4'>
                                 <p className='text-xl text-white font-semibold'>  COUPLES  | </p>
