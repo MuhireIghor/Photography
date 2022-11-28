@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import bgImg from '../../src/assets/mainPage.png';
+import bgImg from '../../src/assets/nhnMenStaff.png';
 import { testimonials } from '../Data/testimonials';
 import { FaChevronLeft } from 'react-icons/fa';
 import { FaChevronRight } from 'react-icons/fa';

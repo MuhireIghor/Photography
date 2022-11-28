@@ -20,7 +20,7 @@ if(window.scrollY>140){
                         <>
                             <div className='flex gap-8 '>
                                 <p onClick={()=>setIsActive(navLink.name)} className={isActive === navLink.name?"text-[#c16839] text-xl hover:cursor-pointer":"text-xl hover:cursor-pointer"}>{navLink.name}</p>
-                                <img src={logo} className='h-8 ' />
+                             <p className='text-xl text-[#6b6b6b] font-bold '>NEW HEAVEN &nbsp;PROTOCOL</p>
                             </div>
                         </>
                     )

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import bride from '../assets/bride.png';
-import wedVid from '../assets/wedding-video.jpg'
+import bride from '../assets/nhnMenStaff.png';
+import wedVid from '../assets/PartyDressing.png'
 import { GoSearch } from 'react-icons/go';
 import { useRecoilState } from 'recoil';
 import { showModal} from '../atoms';
@@ -28,7 +28,7 @@ const About = () => {
           <img src={wedVid} className='z-10' />
           <div className='bg-white/20 backdrop-saturate-150 w-full h-full z-20 absolute flex justify-center items-center'>
             <div className='w-44 h-44 rounded-full border-2 border-white flex justify-center items-center'>
-              <button onClick={() =>setCard()}>
+              <button onClick={() =>setCard(true)}>
                 <GoSearch className='text-white text-6xl font-medium' />
               </button>
             </div>
