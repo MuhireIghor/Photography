@@ -8,6 +8,7 @@ import { showModal } from '../atoms'
 import Services from '../components/Services';
 import OurWorks from '../components/OurWorks';
 import Testimonials from '../components/Testimonials';
+import Footbar from '../components/Footbar';
 
 const Home = () => {
 const [modal,setModal] = useRecoilState(showModal);
@@ -22,6 +23,7 @@ const [modal,setModal] = useRecoilState(showModal);
           <Services />
           <OurWorks />
           <Testimonials />
+          <Footbar />
           </>
         ):(
           <div className='bg-white  h-screen w-screen flex items-center justify-center'>
