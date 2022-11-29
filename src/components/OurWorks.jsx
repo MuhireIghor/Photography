@@ -21,7 +21,7 @@ export const Slideshow = () => {
   const slide3 = clientStories.slice(6, 9);
   return (
     <Carousel showThumbs={false} infiniteLoop autoPlay labels={{}}
-      showStatus={false} stopOnHover swipeable showIndicators={false}>
+      showStatus={false} stopOnHover swipeable showIndicators={false}>    
       <div className='flex gap-2 '>
         {
           slide1.map((slide) => {
