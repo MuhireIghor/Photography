@@ -27,7 +27,7 @@ if(!dropNav.current.contains(e.target)){
         return document.removeEventListener("mousedown",()=>activeListener)
     })
     return (
-        <div className={scroll ? 'flex justify-center gap-12 py-6 sticky top-0 bg-white z-40  w-screen' : 'flex justify-center gap-12 sticky top-0 py-12 w-screen bg-white z-10'}>
+        <div className={scroll ? 'flex justify-center gap-12 py-6 sticky top-0 bg-white z-40  w-screen sm:bg-[red] ' : 'flex justify-center gap-12 sticky top-0 py-12 w-screen bg-white z-10 sm:bg-[red] '}>
             {navLinks.map((navLink, index) => {
                 if (index == 2) {
                     return (
@@ -44,7 +44,7 @@ if(!dropNav.current.contains(e.target)){
                 )
             })}
             <div className={scroll ? 'hidden md:flex justify-between  z-40  w-full px-2' : 'hidden md:flex  justify-between z-10  w-full px-2'}>
-                <p className='text-2xl font-serif  text-[#6b6b6b] font-bold '>NEW HEAVEN PROTOCOL</p>
+                <p className='text-2xl font-serif  text-[#6b6b6b] font-bold sm:text-xl'>NEW HEAVEN PROTOCOL</p>
                 <div className='flex flex-col relative '>
                     <button onClick={handleResponsive}><AiOutlineMenu className='text-[#6b6b6b] hover:text-[#c16839] text-2xl' /></button>
                     {responsive && (
