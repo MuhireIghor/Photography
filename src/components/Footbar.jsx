@@ -5,7 +5,7 @@
     import { data } from 'autoprefixer';
     const Footbar = () => {
     return (
-        <div className='flex gap-24 p-20 bg-[#f5f4f2]'>
+        <div className='flex gap-24 md:gap-12 p-20 md:px-10 bg-[#f5f4f2]'>
             <div className='basis-1/3 flex flex-col gap-4'>
                 <p className='text-[#6b6b6b] font-serif font-bold text-xl'>WEDDING</p>
                 <div className='flex flex-col gap-6 '>
@@ -14,8 +14,7 @@
     {socialMedia.map((media,index)=>{
         return(
             <div className='flex gap-8'>
-                {/* <img key={index} src={media.imgUrl} className='w-8 h-8 hover:cursor-pointer ' /> */}
-                <div className='w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-[#c16839]'>
+                <div className='w-12 md:w-6 h-12 md:h-6 rounded-full bg-white flex items-center justify-center hover:bg-[#c16839]'>
                 <>
                 <p className='hover:text-white hover:cursor-pointer text-2xl'>{media.icon}</p>
                 </>
@@ -39,8 +38,8 @@
 
                 </div>
                 <div className='flex flex-col'>
-                    <p className='text-xl font-sans font-bold text-[#6b6b6b]'>Let us capture your beautiful moments</p>
-                    <p><a className='text-2xl font-sans font-bold text-[#c06535] hover:cursor-pointer'>Contact us </a>now.</p>
+                    <p className='text-xl font-sans font-bold text-[#6b6b6b] md:text-sm'>Let us capture your beautiful moments</p>
+                    <p><a className='text-xl font-sans font-bold text-[#c06535] hover:cursor-pointer md:text-sm'>Contact us </a>now.</p>
                     </div>
             </div>
             <div className='basis-1/3 flex flex-col gap-4'> 

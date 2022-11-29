@@ -2,4 +2,5 @@
     background-image: url('../../src/assets/nhnMenStaff.png');
     background-size: cover;
 background-repeat: no-repeat;
+object-fit: cover;
 }

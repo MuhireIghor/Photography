@@ -34,13 +34,13 @@ const Testimonials = () => {
 
   }
   return (
-    <div className='flex flex-col items-center justify-center relative w-full'>
+    <div className='flex flex-col items-center justify-center relative w-full '>
       <img className='z-10 h-[24rem] w-full object-cover' src={bgImg} />
-      <div className='absolute z-20 flex flex-col items-center justify-center bg-white/20 backdrop-saturate-150 h-full w-full gap-6 '>
+      <div className='absolute z-20 flex flex-col items-center justify-center  h-full w-full gap-6 '>
         <p className='text-xl text-white font-bold font-sans'>LET'S WORK TOGETHER</p>
         <p className='text-3xl text-white font-extrabold font-sans'>Contact Us For Pricing Availability</p>
-        <button className='p-4 bg-[#d7aa92] text-white hover:text-white hover:bg-black flex w-1/4  items-cente justify-center w-1/6'>MORE ABOUT ME</button>
-        <div className='flex flex-col absolute left-16 top-[328px] bg-white p-10  w-1/3'>
+        <button className='p-4 bg-[#d7aa92] text-white hover:text-white hover:bg-black flex w-1/6  items-cente justify-center md:w-1/4'>MORE ABOUT ME</button>
+        <div className='flex flex-col absolute left-16 md:left-0 top-[328px] bg-white p-10  w-1/3 md:w-full'>
 
           <div className='gap-12 flex flex-col p-auto '>
             {
