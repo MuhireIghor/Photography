@@ -29,7 +29,7 @@ export const Slideshow = () => {
               <div className='flex flex-col justify-center items-center relative basis-1/3 p-8 group hover:cursor-pointer md:p-4'>
                 <img src={slide.imgaeUrl} className='z-10' />
                 <Fade bottom>
-                <div className='absolute md:w-4/4 z-20 flex w-3/4 justify-center md:flex  bg-white h-1/6 bottom-12 hidden group-hover:flex '>
+                <div className='absolute md:w-4/4 z-20 flex w-3/4 justify-center md:flex md:bottom-6  bg-white h-1/6 bottom-12 hidden group-hover:flex text-center md:text-xs '>
                 <p className='text-[#bd5e2b] font-semibold'>{slide.event}</p>
                 </div>
                 </Fade>
@@ -44,7 +44,7 @@ export const Slideshow = () => {
             <div className='flex flex-col items-center justify-center relative basis-1/3 p-8 md:p-4 group hover:cursor-pointer '>
               <img src={slicer.imgaeUrl} className='z-10' />
               <Fade bottom>
-              <div className='absolute md:w-4/4 z-20 flex w-3/4 justify-center md:flex items-center bg-white h-1/6 bottom-12 hidden group-hover:flex '>
+              <div className='absolute md:w-4/4 z-20 flex w-3/4 justify-center md:flex items-center md:bottom-6 bg-white h-1/6 bottom-12 hidden group-hover:flex text-center md:text-xs'>
                 <p className='text-[#bd5e2b] font-semibold'>{slicer.event}</p>
                 </div>
               </Fade>
@@ -58,8 +58,8 @@ export const Slideshow = () => {
             <div className='flex flex-col items-center justify-center relative basis-1/3 p-8 group hover:cursor-pointer md:p-4'>
               <img src={slicer1.imgaeUrl} className='z-10' alt="woo" />
               <Fade bottom>
-              <div className='absolute z-20 flex w-3/4 md:w-4/4 justify-center md:flex items-center bg-white h-1/6 bottom-12 hidden group-hover:flex '>
-                <p className='text-[#bd5e2b] font-semibold'>{slicer1.event}</p>
+              <div className='absolute z-20 flex w-3/4 md:w-4/4 justify-center md:flex  md:bottom-6 items-center bg-white h-1/6 bottom-12 hidden group-hover:flex text-center md:text-xs'>
+                <p className='text-[#bd5e2b] font-semibold '>{slicer1.event}</p>
                 </div>
               </Fade>
             </div>
