@@ -40,8 +40,7 @@ const Testimonials = () => {
         <p className='text-xl text-white font-bold font-sans'>LET'S WORK TOGETHER</p>
         <p className='text-3xl text-white font-extrabold font-sans'>Contact Us For Pricing Availability</p>
         <button className='p-4 bg-[#d7aa92] text-white hover:text-white hover:bg-black flex w-1/6  items-cente justify-center md:w-1/4'>MORE ABOUT ME</button>
-        <div className='flex flex-col absolute left-16 md:left-0 top-[328px] bg-white p-10  w-1/3 md:w-full'>
-
+        <div className='flex flex-col absolute left-16 md:left-0 top-[328px] bg-white p-10  w-1/3 md:w-full xl:w-full xl:left-0 ' >
           <div className='gap-12 flex flex-col p-auto '>
             {
               change ? (
