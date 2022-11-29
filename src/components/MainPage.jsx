@@ -5,7 +5,7 @@ import '../styles/mainPage.css'
 const MainPage = () => {
     return (
         <div className=' flex flex-col '>
-            <div className='main1 h-[41rem] flex flex-col items-center justify-center w-full md:w-full'>
+            <div className='main1 h-[41rem] flex flex-col items-center justify-center w-full md:w-full '>
                 <div className=' w-full md:w-full  h-full flex flex-col items-center justify-center opacity-90 relative'>
                     <img src={leaf} className='z-10 ' />
                     <div className='flex  w-full md:w-full h-full z-30 absolute'>
