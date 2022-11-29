@@ -29,7 +29,7 @@ export const SlideShow = () => {
             <div className='w-full h-full p-12 flex grid grid-cols-3 gap-4'>
                 {slide1.map((s1, index) => {
                     return (
-                        <div className='flex items-center justify-center p-4'>
+                        <div className='flex items-center justify-center p-'>
                             <img key={index} src={s1} className='w-full h-full'  />
                         </div>
                     )
