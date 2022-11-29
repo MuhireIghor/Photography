@@ -19,7 +19,7 @@ const About = () => {
           <p className='text-3xl font-bold text-[#6b6b6b]'>CAPTURED BEHIND THE CAMERA</p>
           <p className='text-md text-[#6b6b6b]'>Creating images, both candid and staged, with all the laughs and the in-betweens. We are here to capture the real you and the real love. Together, let us document your day and create images which you could relive for years to come. You deserve the love-filled and unforgettable wedding of your dreams and I am here to help!</p>
           <div className='w-full items-center justify-center md:flex md:justify-center'>
-            <button className='p-4 bg-[#d7aa92] text-white hover:text-white hover:bg-black flex w-1/4  items-cente justify-center'>MORE ABOUT ME</button>
+            <button className='p-4 bg-[#d7aa92] text-white hover:text-white hover:bg-black flex w-1/4  items-cente justify-center xl:w-1/2'>MORE ABOUT ME</button>
           </div>
         </div>
       </div>
