@@ -5,10 +5,10 @@ import { Carousel } from 'react-responsive-carousel';
 const Gallery = () => {
 
     return (
-        <div className='flex flex-col items-center justify-center mt-[400px] bg-[#f5f4f2] gap-2 p-8'>
+        <div className='flex flex-col items-center justify-center mt-[400px] bg-[#f5f4f2] gap-2 p-8 sm:p-2'>
             <p className='text-[#6b6b6b] font-serif font-bold text-xl'>Gallery</p>
-            <p className='text-[#6b6b6b] text-md font-light font-serif'>Follow us on our web platforms for more details and information</p>
-            <div className='flex flex-col items-center justify-center w-full '>
+            <p className='text-[#6b6b6b] text-md font-light font-serif sm:text-[12px] sm:font-medium'>Follow us on our web platforms for more details and information</p>
+            <div className='flex flex-col items-center justify-center  w-full '>
                 <div className='w-12 h-[2px] bg-black mt-2'></div>
             </div>
             <SlideShow />
@@ -26,42 +26,43 @@ export const SlideShow = () => {
     return (
         <Carousel showThumbs={false} infiniteLoop autoPlay labels={{}}
             showStatus={false} stopOnHover swipeable showIndicators={false}>
-            <div className='w-full h-full p-12 flex grid grid-cols-3  gap-4'>
+            <div className='w-full sm:w-full sm:h-1/4 h-full p-12 sm:p-2 flex grid grid-cols-3 sm:flex sm:flex-col  gap-4 sm:gap-1'>
                 {slide1.map((s1, index) => {
                     return (
                         <div className='flex items-center justify-center p-4'>
-                            <img key={index} src={s1} className='w-full h-full'  />
+                            <img key={index} src={s1} className='w-full h-full sm:w-1/4 sm:object-contain' />
                         </div>
                     )
                 })}
             </div>
-            <div className='w-full h-full p-12 flex grid grid-cols-3 gap-4'>
+            <div className='w-full sm:w-full sm:h-1/4 h-full p-12 sm:p-2 flex grid grid-cols-3 sm:flex sm:flex-col  gap-4 sm:gap-1'>
                 {slide2.map((s2, index) => {
                     return (
                         <div className='flex items-center justify-center p-4'>
-                            <img key={index} src={s2} className='w-full h-full' />
+                            <img key={index} src={s2} className='w-full h-full sm:w-1/4 sm:object-contain' />
                         </div>
                     )
                 })}
             </div>
-            <div className='w-full h-full p-12 flex grid grid-cols-3 gap-4'>
+            <div className='w-full sm:w-full sm:h-1/4 h-full p-12 sm:p-2 flex grid grid-cols-3 sm:flex sm:flex-col  gap-4 sm:gap-1'>
                 {slide3.map((s3, index) => {
                     return (
                         <div className='flex items-center justify-center p-4'>
-                            <img key={index} src={s3} className='w-full h-full' />
+                            <img key={index} src={s3} className='w-full h-full  sm:w-1/4 sm:object-contain' />
                         </div>
                     )
                 })}
             </div>
-            <div className='w-full h-full p-12 flex grid grid-cols-3 gap-4'>
+            <div className='w-full sm:w-full sm:h-1/4 h-full p-12 sm:p-2 flex grid grid-cols-3 sm:flex sm:flex-col  gap-4 sm:gap-1'>
                 {slide4.map((s4, index) => {
                     return (
                         <div className='flex items-center justify-center p-4'>
-                            <img key={index} src={s4} className='w-full h-full' />
+                            <img key={index} src={s4} className='w-full h-full sm:w-1/4 sm:object-contain' />
                         </div>
                     )
                 })}
             </div>
+
         </Carousel>
 
     )
