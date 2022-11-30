@@ -14,7 +14,7 @@ import Gallery from '../components/Gallery';
 const Home = () => {
 const [modal,setModal] = useRecoilState(showModal);
   return (
-    <div className=''>
+    <div className='overflow-x-hidden'>
       {
         !modal?(
           <>
@@ -28,7 +28,7 @@ const [modal,setModal] = useRecoilState(showModal);
           <Footbar />
           </>
         ):(
-          <div className='bg-white  h-screen w-screen flex items-center justify-center'>
+          <div className='bg-white  h-screen w-screen flex items-center justify-center '>
 <div className='w-1/2 h-1/2 bg-black relative p-4'>
   <button onClick={()=>setModal(false)}>
 <ImCross className='text-xl text-white right-4 absolute ' />
