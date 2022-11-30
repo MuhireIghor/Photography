@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useState,useRef } from 'react';
+import { useState, useRef } from 'react';
 import { navLinks } from '../Data/NavabarLinks';
 import { AiOutlineMenu } from 'react-icons/ai'
 import logo from '../assets/wedding-logo.png'
@@ -18,23 +18,23 @@ const Navbar = () => {
             setScroll(false);
         }
     }
-    useEffect(()=>{
-        const activeListener = document.addEventListener("mousedown",(e)=>{
-if(!dropNav.current.contains(e.target)){
-    setResponsive(false);
-}
+    useEffect(() => {
+        const activeListener = document.addEventListener("mousedown", (e) => {
+            if (!dropNav.current.contains(e.target)) {
+                setResponsive(false);
+            }
         })
-        return document.removeEventListener("mousedown",()=>activeListener)
+        return document.removeEventListener("mousedown", () => activeListener)
     })
     return (
-        <div className={scroll ? 'flex justify-center gap-12 py-6 sticky top-0 bg-white z-40  w-screen sm:bg-[red] ' : 'flex justify-center gap-12 sticky top-0 py-12 w-screen bg-white z-10 sm:bg-[red] '}>
+        <div className={scroll ? 'flex justify-center gap-12 py-6 sticky top-0 bg-white z-50  w-screen xl:bg-[blue]  lg:bg-[orange]' : 'flex justify-center gap-12 sticky top-0 py-12 w-screen bg-white z-20 xl:bg-[blue] lg:bg-[orange] '}>
             {navLinks.map((navLink, index) => {
                 if (index == 2) {
                     return (
                         <>
                             <div className='flex gap-8 md:hidden'>
                                 <p onClick={() => setIsActive(navLink.name)} className={isActive === navLink.name ? "text-[#c16839] text-xl hover:cursor-pointer" : "text-xl hover:cursor-pointer hover:text-[#c16839]"}>{navLink.name}</p>
-                                <p className='text-xl text-[#6b6b6b] font-bold '>NEW HEAVEN &nbsp;PROTOCOL</p>
+                                <p className='text-xl text-[#6b6b6b] font-bold lg:text-md lg:ml-4 '>NEW HEAVEN &nbsp;PROTOCOL</p>
                             </div>
                         </>
                     )
