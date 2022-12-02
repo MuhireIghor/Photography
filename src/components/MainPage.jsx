@@ -1,12 +1,20 @@
-import React from 'react'
+import React,{useState} from 'react'
 import mainPage from '../assets/nhnMenStaff.png';
 import leaf from '../assets/leaf-white.png'
 const MainPage = () => {
+    const [scroll, setScroll] = useState(false);
+    document.onscroll = (e) => {
+        if (window.scrollY > 140) {
+            setScroll(true);
+        } else {
+            setScroll(false);
+        }
+    }
     return (
         <div className=' flex flex-col relative overflow-x-hidden '>
                     <img src={mainPage} className=' w-full h-full z-10 md:object-contain' />
-                <div className='flex  w-full md:w-full h-full z-20 absolute'>
-                    <div className='w-full h-full flex flex-col items-center justify-center gap-4'>
+                <div className={scroll?'flex  w-full md:w-full h-full  absolute':'flex  w-full md:w-full h-full z-10 absolute'}>
+                    <div className='w-full h-full flex flex-col items-center justify-center gap-4 sm:mt-12 xl:mt-16 '>
                         <div className='flex gap-4 md:gap-2'>
                             <p className='text-xl text-white font-semibold'>  COUPLES  | </p>
                             <p className='text-xl text-white font-semibold'>  WEDDINGS  | </p>

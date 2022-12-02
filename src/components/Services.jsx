@@ -6,7 +6,7 @@ import leaf from '../assets/leaf-blue-ornament-54x64.png';
 
 const Services = () => {
     return (
-        <div className='flex flex-col  bg-white gap-8 py-20'>
+        <div className='flex flex-col bg-white gap-8 py-20'>
 
             <div className='flex flex-col items-center justify-center md:justify-start gap-8 '>
                 <img src={leaf} />
