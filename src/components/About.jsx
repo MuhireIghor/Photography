@@ -23,7 +23,7 @@ const About = () => {
       </div>
       <div className='flex flex-col items-center justify-center p-28 md:mt-64 md:px-14 md:p-8 sm:py-12 sm:mb-28 sm:px-1'>
         <div className='flex flex-col relative sm:mt-32' >
-          <img src={'https://res.cloudinary.com/dpk9zrwl2/image/upload/v1669982609/PartyDressing_gxe16e.png'} className='z-10 ' />
+          <img src={'https://res.cloudinary.com/dpk9zrwl2/image/upload/v1669982609/PartyDressing_gxe16e.png'} className='z-10' />
           <div className='brightness-50 w-full h-full z-10 absolute flex justify-center items-center'>
             <div className='w-44 h-44 rounded-full border-2 border-white flex justify-center items-center'>
               <button onClick={() =>setCard(true)}>

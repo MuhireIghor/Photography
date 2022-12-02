@@ -12,5 +12,4 @@ export const images = [
     'https://res.cloudinary.com/dpk9zrwl2/image/upload/v1669982609/feastDressing_kntzav.png',
     'https://res.cloudinary.com/dpk9zrwl2/image/upload/v1669982609/PartyDressing_gxe16e.png',
 
-    
 ]
