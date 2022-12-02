@@ -27,7 +27,7 @@ const Navbar = () => {
         return document.removeEventListener("mousedown", () => activeListener)
     })
     return (
-        <div className={scroll ? 'flex justify-center gap-12 py-6 fixed bg-white z-40  w-screen xl:bg-[blue]  md:bg-[orange] ' : 'flex justify-center gap-12 fixed py-12 w-screen bg-white z-20 xl:bg-[blue] md:bg-[orange]'}>
+        <div className={scroll ? 'flex justify-center gap-12 py-6 fixed bg-white z-40  w-screen  ' : 'flex justify-center gap-12 fixed py-12 w-screen bg-white z-20 '}>
             {navLinks.map((navLink, index) => {
                 if (index == 2) {
                     return (
