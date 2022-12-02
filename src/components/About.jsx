@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import bride from '../assets/nhnMenStaff.png';
-import wedVid from '../assets/PartyDressing.png'
+import bride from '/assets/nhnMenStaff.png';
+import wedVid from '/assets/PartyDressing.png'
 import { GoSearch } from 'react-icons/go';
 import { useRecoilState } from 'recoil';
 import { showModal} from '../atoms';

@@ -2,7 +2,7 @@ import React from 'react';
 import { BsCamera } from 'react-icons/bs';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiOutlinePicture } from 'react-icons/ai';
-import leaf from '../assets/leaf-blue-ornament-54x64.png';
+import leaf from '/assets/leaf-blue-ornament-54x64.png';
 
 const Services = () => {
     return (

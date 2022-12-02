@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
-import mainPage from '../assets/nhnMenStaff.png';
-import leaf from '../assets/leaf-white.png'
+import mainPage from '/assets/nhnMenStaff.png';
+import leaf from '/assets/leaf-white.png'
 const MainPage = () => {
     const [scroll, setScroll] = useState(false);
     document.onscroll = (e) => {

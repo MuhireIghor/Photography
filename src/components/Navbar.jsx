@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useState, useRef } from 'react';
 import { navLinks } from '../Data/NavabarLinks';
 import { AiOutlineMenu } from 'react-icons/ai'
-import logo from '../assets/wedding-logo.png'
+import logo from '/assets/wedding-logo.png'
 const Navbar = () => {
     const [isActive, setIsActive] = useState("Home");
     const [scroll, setScroll] = useState(false);
