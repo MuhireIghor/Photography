@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import bride from '/assets/nhnMenStaff.png';
-import wedVid from '/assets/PartyDressing.png'
 import { GoSearch } from 'react-icons/go';
 import { useRecoilState } from 'recoil';
 import { showModal} from '../atoms';
@@ -12,7 +10,7 @@ const About = () => {
     <div className='bg-[#f5f4f2] flex flex-col p-6'>
       <div className='flex gap-4 items-center justify-between h-[40.9rem] md:flex-col'>
         <div className='basis-1/2  flex justify-end'>
-          <img src={bride} className='h-[28rem] mt-32 ' />
+          <img src={'https://res.cloudinary.com/dpk9zrwl2/image/upload/v1669982610/nhnMenStaff_ba8hda.png'} className='h-[28rem] mt-32 ' />
         </div>
         <div className='flex flex-col justify-start items-start basis-1/2 gap-8 p-6 '>
           <p className='text-2xl font-semibold text-[#6b6b6b]'>YOUR LOVE STORY</p>
@@ -25,7 +23,7 @@ const About = () => {
       </div>
       <div className='flex flex-col items-center justify-center p-28 md:mt-64 md:px-14 md:p-8 sm:py-12 sm:mb-28 sm:px-1'>
         <div className='flex flex-col relative sm:mt-32' >
-          <img src={wedVid} className='z-10 ' />
+          <img src={'https://res.cloudinary.com/dpk9zrwl2/image/upload/v1669982609/PartyDressing_gxe16e.png'} className='z-10 ' />
           <div className='brightness-50 w-full h-full z-10 absolute flex justify-center items-center'>
             <div className='w-44 h-44 rounded-full border-2 border-white flex justify-center items-center'>
               <button onClick={() =>setCard(true)}>

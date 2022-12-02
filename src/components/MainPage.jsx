@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import mainPage from '/assets/nhnMenStaff.png';
+
 import leaf from '/assets/leaf-white.png'
 const MainPage = () => {
     const [scroll, setScroll] = useState(false);
@@ -12,7 +12,7 @@ const MainPage = () => {
     }
     return (
         <div className=' flex flex-col relative overflow-x-hidden '>
-                    <img src={mainPage} className=' w-full h-full z-10 md:object-contain' />
+                    <img src={'https://res.cloudinary.com/dpk9zrwl2/image/upload/v1669982610/nhnMenStaff_ba8hda.png'} className=' w-full h-full z-10 md:object-contain' />
                 <div className={scroll?'flex  w-full md:w-full h-full  absolute':'flex  w-full md:w-full h-full z-10 absolute'}>
                     <div className='w-full h-full flex flex-col items-center justify-center gap-4 sm:mt-12 xl:mt-16 '>
                         <div className='flex gap-4 md:gap-2'>

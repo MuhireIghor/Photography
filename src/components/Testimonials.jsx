@@ -35,7 +35,7 @@ const Testimonials = () => {
   }
   return (
     <div className='flex flex-col items-center justify-center relative w-full p-6 '>
-      <img className='z-10 h-[24rem] w-full object-cover' src={bgImg} />
+      <img className='z-10 h-[24rem] w-full object-cover' src={'https://res.cloudinary.com/dpk9zrwl2/image/upload/v1669982610/nhnMenStaff_ba8hda.png'} />
       <div className='absolute z-10 flex flex-col items-center justify-center sm:flex sm:items-start sm:p-20  h-full w-full gap-6 sm:gap-2'>
         <p className='text-xl text-white font-bold font-sans sm:text-md sm:flex sm:items-start'>LET'S WORK TOGETHER</p>
         <p className='text-3xl text-white font-extrabold font-sans sm:text-md sm:flex sm:w-2/3 sm:text-xl'>Contact Us For Pricing Availability</p>

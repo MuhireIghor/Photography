@@ -2,14 +2,14 @@ import React from 'react';
 import { BsCamera } from 'react-icons/bs';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiOutlinePicture } from 'react-icons/ai';
-import leaf from '/assets/leaf-blue-ornament-54x64.png';
+
 
 const Services = () => {
     return (
         <div className='flex flex-col bg-white gap-8 py-20'>
 
             <div className='flex flex-col items-center justify-center md:justify-start gap-8 '>
-                <img src={leaf} />
+                <img src={'https://res.cloudinary.com/dpk9zrwl2/image/upload/v1669982606/leaf-blue-ornament-54x64_nmnr2e.png'} />
                 <p className='text-2xl font-semibold text-[#6b6b6b] md:text-sm'>WE TELL STORIES</p>
                 <p className='text-3xl font-bold text-[#6b6b6b] md:w-1/2 md:text-[18px]'>We are here to connect and document your love story the way you want it told</p>
             </div>
