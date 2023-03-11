@@ -12,6 +12,7 @@ const About = () => {
         <div className='basis-1/2  flex justify-end'>
           <img src={'https://res.cloudinary.com/dpk9zrwl2/image/upload/v1669982610/nhnMenStaff_ba8hda.png'} className='h-[28rem] mt-32 ' />
         </div>
+        <p>nopenope</p>
         <div className='flex flex-col justify-start items-start basis-1/2 gap-8 p-6 '>
           <p className='text-2xl font-semibold text-[#6b6b6b]'>YOUR LOVE STORY</p>
           <p className='text-3xl font-bold text-[#6b6b6b]'>CAPTURED BEHIND THE CAMERA</p>
@@ -19,6 +20,7 @@ const About = () => {
           <div className='w-full items-center justify-center md:flex md:justify-center'>
             <button className='p-4 bg-[#d7aa92] text-white hover:text-white hover:bg-black flex w-1/4  items-cente justify-center xl:w-1/2'>MORE ABOUT ME</button>
           </div>
+          
         </div>
       </div>
       <div className='flex flex-col items-center justify-center p-28 md:mt-64 md:px-14 md:p-8 sm:py-12 sm:mb-28 sm:px-1'>
