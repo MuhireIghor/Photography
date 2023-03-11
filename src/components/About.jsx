@@ -12,7 +12,7 @@ const About = () => {
         <div className='basis-1/2  flex justify-end'>
           <img src={'https://res.cloudinary.com/dpk9zrwl2/image/upload/v1669982610/nhnMenStaff_ba8hda.png'} className='h-[28rem] mt-32 ' />
         </div>
-        <p>nopenope</p>
+
         <p>ok</p>
         <div className='flex flex-col justify-start items-start basis-1/2 gap-8 p-6 '>
           <p className='text-2xl font-semibold text-[#6b6b6b]'>YOUR LOVE STORY</p>
